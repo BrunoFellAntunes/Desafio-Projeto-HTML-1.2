@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Clínica Veterinária DogCats</title>
+		<link rel="stylesheet" href="styles.css" />
+		<style>
+			header h1 {
+				color: rgb(211, 46, 46);
+			}
+			hr {
+				background-color: lightseagreen;
+				padding: 1px;
+			}
+			html,
+			body {
+				height: 100%; /* Garante que o corpo e o HTML preencham a altura total da tela */
+				margin: 0; /* Remove as margens padrão do navegador */
+			}
+			body {
+				background-color: lightblue;
+				display: flex;
+				flex-direction: column;
+			}
+			.content {
+				margin-left: 100px;
+				margin-right: 100px;
+				border: 10px solid lightseagreen;
+				padding: 10px;
+				border-radius: 40px;
+				flex: 1;
+			}
+			nav ul {
+				list-style-type: none; /* Remove os marcadores */
+				padding: 0;
+				margin: 0;
+				background-color: lightseagreen; /* Cor de fundo */
+				border-radius: 40px;
+			}
+
+			nav ul li {
+				display: inline; /* Exibe os itens em linha */
+			}
+
+			nav ul li a {
+				display: inline-block;
+				padding: 10px 15px;
+				color: black; /* Cor do texto */
+				text-decoration: none; /* Remove o sublinhado dos links */
+			}
+
+			nav ul li a:hover {
+				background-color: rgb(53, 255, 184); /* Cor ao passar o mouse */
+				border-radius: 40px;
+			}
+			footer {
+				background-color: lightseagreen; /* Cor de fundo do rodapé */
+				color: black; /* Cor do texto */
+				text-align: center; /* Centraliza o texto */
+				padding: 10px; /* Espaçamento interno */
+				width: 100%;
+				/* Fixa o rodapé na parte inferior da página */
+				bottom: 0; /* Posiciona o rodapé no fundo */
+				margin: 0;
+			}
+
+			footer a {
+				color: blue; /* Cor dos links */
+				text-decoration: none; /* Remove o sublinhado dos links */
+			}
+
+			footer a:hover {
+				text-decoration: underline; /* Sublinha os links ao passar o mouse */
+			}
+
+			table {
+				width: 100%;
+				border-collapse: collapse; /* Remove os espaços entre bordas */
+				margin: 20px 0;
+			}
+
+			table,
+			th,
+			td {
+				border: 1px solid black; /* Borda da tabela e células */
+			}
+
+			th,
+			td {
+				padding: 10px;
+				text-align: center;
+			}
+
+			th {
+				background-color: lightseagreen; /* Cor de fundo dos cabeçalhos */
+				color: black; /* Cor do texto dos cabeçalhos */
+			}
+			.service-description {
+				margin: 20px 0;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<nav class="menu">
+				<ul>
+					<li>
+						<img
+							src="logotipo.png"
+							alt="Logo da Clínica Veterinária"
+							width="50"
+							align="center"
+						/>
+					</li>
+					<li><a href="PaginaPrincipal.html">Pagina Principal</a></li>
+					<li><a href="Sobre.html">Sobre a clínica</a></li>
+					<li><a href="Horario.html">Horário de Atendimento</a></li>
+					<li><a href="Contato.html">Contato</a></li>
+				</ul>
+			</nav>
+		</header>
+		<hr />
+
+		<div class="content">
+			<section id="sobre">
+				<h2>Sobre a Clínica</h2>
+				<p>
+					Na Clínica Veterinária DogCats, oferecemos cuidados
+					excepcionais para cães e gatos com uma abordagem
+					personalizada. Nossa equipe é dedicada a proporcionar o
+					melhor atendimento para garantir a saúde e o bem-estar dos
+					seus pets.
+				</p>
+			</section>
+
+			<section id="servicos">
+				<h2>Serviços</h2>
+				<p class="service-description">
+					Oferecemos uma gama de serviços para atender às necessidades
+					específicas de seus animais de estimação. Nossos serviços
+					incluem consultas gerais, atendimento especializado, e
+					exames diagnósticos para garantir que seu pet receba o
+					melhor cuidado possível.
+				</p>
+				<table>
+					<thead>
+						<tr>
+							<th>Serviços</th>
+							<th>Segunda a Sexta</th>
+							<th>Sábados</th>
+							<th>Feriados</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Clínica Geral</td>
+							<td>08h - 19h</td>
+							<td>08h - 14h</td>
+							<td>08h - 14h</td>
+						</tr>
+						<tr>
+							<td>Psicologia</td>
+							<td>08h - 19h</td>
+							<td>08h - 14h</td>
+							<td>08h - 14h</td>
+						</tr>
+						<tr>
+							<td>Pediatria</td>
+							<td>08h - 19h</td>
+							<td>08h - 18h</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<td>Oftalmologia</td>
+							<td>08h - 19h</td>
+							<td>08h - 18h</td>
+							<td>-</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section id="precos">
+				<h2>Preços dos Serviços</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Serviço</th>
+							<th>Segunda a Sexta</th>
+							<th>Sábados</th>
+							<th>Feriados</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Consulta Geral</td>
+							<td>R$ 150</td>
+							<td>R$ 120</td>
+							<td>R$ 120</td>
+						</tr>
+						<tr>
+							<td>Psicologia Animal</td>
+							<td>R$ 180</td>
+							<td>R$ 150</td>
+							<td>R$ 150</td>
+						</tr>
+						<tr>
+							<td>Pediatria</td>
+							<td>R$ 200</td>
+							<td>R$ 170</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<td>Oftalmologia</td>
+							<td>R$ 220</td>
+							<td>R$ 190</td>
+							<td>-</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section id="imagem">
+				<h2>Galeria</h2>
+				<img
+					src="imagem-clinica.jpg"
+					alt="Imagem da Clínica"
+					width="500"
+				/>
+			</section>
+		</div>
+		<hr />
+
+		<footer>
+			<p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
+			<p>
+				<a href="mailto:exemplodeemail@gmail.com"
+					>exemplodeemail@gmail.com</a
+				>
+				| <a href="#privacy">Política de Privacidade</a>
+			</p>
+		</footer>
+	</body>
+</html>

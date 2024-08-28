@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>DogCats | Menu</title>
+		<link rel="stylesheet" href="base.css" />
+		<style>
+			html,
+			body {
+				height: 100%; /* Garante que o corpo e o HTML preencham a altura total da tela */
+				margin: 0; /* Remove as margens padrão do navegador */
+			}
+			body {
+				background-color: lightblue;
+				display: flex;
+				flex-direction: column;
+			}
+			.content {
+				margin-left: 100px;
+				margin-right: 100px;
+				border: 10px solid lightseagreen;
+				padding: 10px;
+				border-radius: 40px;
+				flex: 1;
+			}
+			.header {
+				border-radius: 15px;
+			}
+			.menu-image {
+				max-width: 100px;
+				height: auto;
+			}
+			hr {
+				background-color: lightseagreen;
+				padding: 1px;
+			}
+			nav ul {
+				list-style-type: none; /* Remove os marcadores */
+				padding: 0;
+				margin: 0;
+				background-color: lightseagreen; /* Cor de fundo */
+				border-radius: 40px;
+			}
+
+			nav ul li {
+				display: inline; /* Exibe os itens em linha */
+			}
+
+			nav ul li a {
+				display: inline-block;
+				padding: 10px 15px;
+				color: black; /* Cor do texto */
+				text-decoration: none; /* Remove o sublinhado dos links */
+			}
+
+			nav ul li a:hover {
+				background-color: rgb(53, 255, 184); /* Cor ao passar o mouse */
+				border-radius: 40px;
+			}
+			footer {
+				background-color: lightseagreen; /* Cor de fundo do rodapé */
+				color: black; /* Cor do texto */
+				text-align: center; /* Centraliza o texto */
+				padding: 10px; /* Espaçamento interno */
+				width: 100%; /* Faz o rodapé preencher toda a largura da página */
+				position: relative; /* Permite que o rodapé não fique fixo */
+				bottom: 0; /* Posiciona o rodapé no fundo do conteúdo, não fixo */
+				margin: 0;
+			}
+
+			footer a {
+				color: blue; /* Cor dos links */
+				text-decoration: none; /* Remove o sublinhado dos links */
+			}
+
+			footer a:hover {
+				text-decoration: underline; /* Sublinha os links ao passar o mouse */
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Clínica Veterinária DogCats</h1>
+		<div class="wrapper">
+			<nav class="menu">
+				<ul>
+					<li>
+						<img
+							src="logotipo.png"
+							alt="Logo da Clínica Veterinária"
+							width="50"
+							align="center"
+						/>
+					</li>
+					<li><a href="PaginaPrincipal.html">Pagina Principal</a></li>
+					<li><a href="Sobre.html">Sobre a clínica</a></li>
+					<li><a href="Horario.html">Horário de Atendimento</a></li>
+					<li><a href="Contato.html">Contato</a></li>
+				</ul>
+			</nav>
+
+			<hr />
+
+			<div class="main">
+				<div class="header" align="center">
+					<img src="imagem-dogcats.png" width="900" height="300" />
+				</div>
+
+				<hr />
+
+				<div class="content" align="center">
+					Bem-vindo à
+					<u><strong>Cínica Veterinária DogCats</strong></u
+					>, o lugar onde a saúde e o bem-estar dos seus felinos e
+					caninos são nossa prioridade. Localizada no coração da
+					cidade, nossa clínica é especialmente projetada para
+					oferecer um ambiente acolhedor e seguro para gatos e
+					cachorros de todas as idades e tamanhos.
+				</div>
+				<br />
+
+				<footer>
+					<p>
+						&copy; 2024 Sua Empresa. Todos os direitos reservados.
+					</p>
+					<p>
+						<a href="mailto:exemplodeemail@gmail.com"
+							>exemplodeemail@gmail.com</a
+						>
+						| <a href="#privacy">Política de Privacidade</a>
+					</p>
+				</footer>
+			</div>
+		</div>
+	</body>
+</html>

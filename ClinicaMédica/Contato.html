@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Clínica Veterinária DogCats - Contato</title>
+		<link rel="stylesheet" href="styles.css" />
+		<style>
+			header h1 {
+				color: rgb(211, 46, 46);
+			}
+			hr {
+				background-color: lightseagreen;
+				padding: 1px;
+			}
+			html,
+			body {
+				height: 100%; /* Garante que o corpo e o HTML preencham a altura total da tela */
+				margin: 0; /* Remove as margens padrão do navegador */
+			}
+			body {
+				background-color: lightblue;
+				display: flex;
+				flex-direction: column;
+			}
+			.content {
+				margin-left: 100px;
+				margin-right: 100px;
+				border: 10px solid lightseagreen;
+				padding: 10px;
+				border-radius: 40px;
+				flex: 1;
+			}
+			nav ul {
+				list-style-type: none; /* Remove os marcadores */
+				padding: 0;
+				margin: 0;
+				background-color: lightseagreen; /* Cor de fundo */
+				border-radius: 40px;
+			}
+
+			nav ul li {
+				display: inline; /* Exibe os itens em linha */
+			}
+
+			nav ul li a {
+				display: inline-block;
+				padding: 10px 15px;
+				color: black; /* Cor do texto */
+				text-decoration: none; /* Remove o sublinhado dos links */
+			}
+
+			nav ul li a:hover {
+				background-color: rgb(53, 255, 184); /* Cor ao passar o mouse */
+				border-radius: 40px;
+			}
+			footer {
+				background-color: lightseagreen; /* Cor de fundo do rodapé */
+				color: black; /* Cor do texto */
+				text-align: center; /* Centraliza o texto */
+				padding: 10px; /* Espaçamento interno */
+				width: 100%;
+				/* Fixa o rodapé na parte inferior da página */
+				bottom: 0; /* Posiciona o rodapé no fundo */
+				margin: 0;
+			}
+
+			footer a {
+				color: blue; /* Cor dos links */
+				text-decoration: none; /* Remove o sublinhado dos links */
+			}
+
+			footer a:hover {
+				text-decoration: underline; /* Sublinha os links ao passar o mouse */
+			}
+
+			table {
+				width: 100%;
+				border-collapse: collapse; /* Remove os espaços entre bordas */
+				margin: 20px 0;
+			}
+
+			table,
+			th,
+			td {
+				border: 1px solid black; /* Borda da tabela e células */
+			}
+
+			th,
+			td {
+				padding: 10px;
+				text-align: center;
+			}
+
+			th {
+				background-color: lightseagreen; /* Cor de fundo dos cabeçalhos */
+				color: black; /* Cor do texto dos cabeçalhos */
+			}
+
+			.service-description {
+				margin: 20px 0;
+			}
+
+			.contact-info {
+				margin: 20px 0;
+			}
+
+			.contact-info p {
+				margin: 5px 0;
+			}
+
+			iframe {
+				width: 100%;
+				height: 300px;
+				border: 0;
+			}
+
+			form {
+				margin: 20px 0;
+				max-width: 600px;
+				margin-left: auto;
+				margin-right: auto;
+				padding: 20px;
+				background-color: #f9f9f9;
+				border-radius: 10px;
+			}
+
+			form label {
+				display: block;
+				margin: 10px 0 5px;
+			}
+
+			form input,
+			form textarea {
+				width: 100%;
+				padding: 10px;
+				margin-bottom: 10px;
+				border: 1px solid #ccc;
+				border-radius: 5px;
+			}
+
+			form button {
+				padding: 10px 15px;
+				color: white;
+				background-color: lightseagreen;
+				border: none;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+
+			form button:hover {
+				background-color: rgb(53, 255, 184);
+			}
+
+			@media (max-width: 768px) {
+				nav ul {
+					text-align: center;
+				}
+
+				nav ul li {
+					display: block;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<nav class="menu">
+				<ul>
+					<li>
+						<img
+							src="logotipo.png"
+							alt="Logo da Clínica Veterinária"
+							width="50"
+							align="center"
+						/>
+					</li>
+					<li><a href="PaginaPrincipal.html">Pagina Principal</a></li>
+					<li><a href="Sobre.html">Sobre a clínica</a></li>
+					<li><a href="Horario.html">Horário de Atendimento</a></li>
+					<li><a href="Contato.html">Contato</a></li>
+				</ul>
+			</nav>
+		</header>
+		<hr />
+
+		<div class="content">
+			<section id="contato">
+				<h2>Contato</h2>
+
+				<div class="contact-info">
+					<h3>Informações de Contato</h3>
+					<p><strong>Telefone:</strong> (XX) XXXX-XXXX</p>
+					<p><strong>WhatsApp:</strong> (XX) X XXXX-XXXX</p>
+					<p>
+						<strong>Endereço:</strong> Rua XXXXXXX, N° - BAIRRO,
+						CIDADE - SIGLA, CEP
+					</p>
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d56800.110009880525!2d-52.62556093732615!3d-27.15607389046745!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1724874003601!5m2!1spt-BR!2sbr"
+						width="600"
+						height="450"
+						style="border: 0"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+					></iframe>
+				</div>
+
+				<form action="#" method="post">
+					<label for="nome">Nome:</label>
+					<input type="text" id="nome" name="nome" required />
+
+					<label for="email">E-mail:</label>
+					<input
+						placeholder="Ex: meuemail@gmail.com"
+						type="email"
+						id="email"
+						name="email"
+						required
+					/>
+
+					<label for="assunto">Assunto:</label>
+					<input type="text" id="assunto" name="assunto" required />
+
+					<label for="mensagem">Mensagem:</label>
+					<textarea
+						id="mensagem"
+						name="mensagem"
+						rows="4"
+						required
+					></textarea>
+
+					<button type="submit">Enviar</button>
+					<button type="reset">Limpar</button>
+				</form>
+			</section>
+		</div>
+		<hr />
+
+		<footer>
+			<p>&copy; 2024 Sua Empresa. Todos os direitos reservados.</p>
+			<p>
+				<a href="mailto:exemplodeemail@gmail.com"
+					>exemplodeemail@gmail.com</a
+				>
+				| <a href="#privacy">Política de Privacidade</a>
+			</p>
+		</footer>
+	</body>
+</html>
